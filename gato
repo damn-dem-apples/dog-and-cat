@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Image and Videos</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+        img, video {
+            max-width: 30%;
+            height: auto;
+        }
+        form {
+            margin: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+<div class="container">
+    <img src="https://phoenixdogtraining.com/wp-content/uploads/2021/10/how-to-stop-a-dog-from-chasing-a-cat.jpg.webp" alt="Dog Chases Cat">
+
+
+<video width="120" height="40" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+
+</video>
+
+
+
+<video width="120" height="140" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+
+</video>
+
+     
+    </video>
+</div>
+
+<form action="mailto:your@email.com" method="post" enctype="text/plain">
+    <label for="name">Name: <span style="color: red;">*</span></label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email: <span style="color: red;">*</span></label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label>Preference: <span style="color: red;">*</span></label><br>
+    <input type="radio" id="image" name="preference" value="image" required>
+    <label for="image">Image</label>
+
+    <input type="radio" id="video" name="preference" value="video" required>
+    <label for="video">Video</label><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>
